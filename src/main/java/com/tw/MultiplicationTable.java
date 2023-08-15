@@ -5,7 +5,7 @@ import java.util.List;
 
 public class MultiplicationTable {
     public String buildMultiplicationTable(int start, int end) {
-        return null;
+        return isValid(start, end) ? generateTable(start, end) : null;
     }
 
     public Boolean isValid(int start, int end) {
