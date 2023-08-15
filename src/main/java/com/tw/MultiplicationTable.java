@@ -27,8 +27,8 @@ public class MultiplicationTable {
     public String generateLine(int start, int row) {
         List<String> expressions = new ArrayList<>();
 
-        for (int i = start; i <= row; i++) {
-            expressions.add(generateSingleExpression(i, row));
+        for (int multiplicand = start; multiplicand <= row; multiplicand++) {
+            expressions.add(generateSingleExpression(multiplicand, row));
         }
         return String.join("  ", expressions);
     }
