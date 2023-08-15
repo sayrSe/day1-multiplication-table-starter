@@ -17,7 +17,7 @@ public class MultiplicationTable {
     }
 
     public Boolean isStartNotBiggerThanEnd(int start, int end) {
-        return start < end;
+        return start <= end;
     }
 
     public String generateTable(int start, int end) {
